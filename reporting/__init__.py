@@ -18,11 +18,9 @@ def all_reports():
     return _registry.items()
 
 
-
-REPORTING_SOURCE_FILE = 'reports'
-
 def autodiscover():
     from django.conf import settings
+    REPORTING_SOURCE_FILE =  getattr(settings, 'REPORTING_SOURCE_FILE', 'reports') 
     for app in settings.INSTALLED_APPS:
         try:
             app_path = __import__(app, {}, {}, [app.split('.')[-1]]).__path__
