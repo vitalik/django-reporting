@@ -1,0 +1,37 @@
+{% extends "admin/base_site.html" %}
+{% load adminmedia admin_list i18n %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/changelists.css" />
+{% endblock %}
+
+
+{% block bodyclass %}change-list{% endblock %}
+
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+     <a href="/admin/">{% trans "Home" %}</a> &rsaquo;
+     Reports 
+
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+  <div id="content-main">
+    {% block object-tools %}{% endblock %}
+    
+    <div id="changelist">
+
+		<H2>Reports</H2>
+      
+      <div id="changelist"
+			{% for slug, report in reports %}
+				<a href="{% url reporting-view slug %}">{{report.verbose_name}}</a><br>
+			{% endfor %}
+	  </div>
+    </div>
+  </div>
+{% endblock %}

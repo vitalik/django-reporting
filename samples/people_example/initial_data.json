@@ -1,0 +1,331 @@
+[
+ {
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+   "username": "admin", 
+   "first_name": "", 
+   "last_name": "", 
+   "is_active": true, 
+   "is_superuser": true, 
+   "is_staff": true, 
+   "last_login": "2009-11-12 09:26:07", 
+   "groups": [], 
+   "user_permissions": [], 
+   "password": "sha1$b4f73$8730fc9fb2303801a9951f9a721c745f487a4875", 
+   "email": "admin@admins.com", 
+   "date_joined": "2009-11-12 08:52:16"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "locations.country", 
+  "fields": {
+   "name": "USA"
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "locations.country", 
+  "fields": {
+   "name": "Canada"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "people.department", 
+  "fields": {
+   "leader": 2, 
+   "title": "Sales"
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "people.department", 
+  "fields": {
+   "leader": 1, 
+   "title": "Development"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "people.occupation", 
+  "fields": {
+   "title": "Management"
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "people.occupation", 
+  "fields": {
+   "title": "Testing"
+  }
+ }, 
+ {
+  "pk": 3, 
+  "model": "people.occupation", 
+  "fields": {
+   "title": "Innovate"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "3663", 
+   "name": "Daniel Davis", 
+   "country": 1, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 1, 
+   "occupation": 2
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "3263", 
+   "name": "Isabella Johnson", 
+   "country": 2, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 1
+  }
+ }, 
+ {
+  "pk": 3, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "3613", 
+   "name": "Daniel Martinez", 
+   "country": 1, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 3
+  }
+ }, 
+ {
+  "pk": 4, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "2232", 
+   "name": "Daniel Zabiyaka", 
+   "country": 2, 
+   "expenses": "100", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 3
+  }
+ }, 
+ {
+  "pk": 5, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "4312", 
+   "name": "Emma Robinsson", 
+   "country": 2, 
+   "expenses": "50", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 3
+  }
+ }, 
+ {
+  "pk": 6, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "2005", 
+   "name": "Jacob Moor", 
+   "country": 1, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 3
+  }
+ }, 
+ {
+  "pk": 7, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "4682", 
+   "name": "Michael Robinsson", 
+   "country": 1, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 1, 
+   "occupation": 1
+  }
+ }, 
+ {
+  "pk": 8, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "3992", 
+   "name": "Jacob Robinsson", 
+   "country": 1, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 1, 
+   "occupation": 2
+  }
+ }, 
+ {
+  "pk": 9, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "2726", 
+   "name": "Hanna Smith", 
+   "country": 1, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 1
+  }
+ }, 
+ {
+  "pk": 10, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "2460", 
+   "name": "Isabella Brawn", 
+   "country": 2, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 3
+  }
+ }, 
+ {
+  "pk": 11, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "2071", 
+   "name": "Isabella Thomas", 
+   "country": 2, 
+   "expenses": "50", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 3
+  }
+ }, 
+ {
+  "pk": 12, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "4237", 
+   "name": "Hanna Johnson", 
+   "country": 1, 
+   "expenses": "100", 
+   "birth_date": "1980-01-01", 
+   "department": 1, 
+   "occupation": 1
+  }
+ }, 
+ {
+  "pk": 13, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "3101", 
+   "name": "Jacob Robinsson", 
+   "country": 2, 
+   "expenses": "150", 
+   "birth_date": "1980-01-01", 
+   "department": 1, 
+   "occupation": 1
+  }
+ }, 
+ {
+  "pk": 14, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "4431", 
+   "name": "Michael Smith", 
+   "country": 1, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 3
+  }
+ }, 
+ {
+  "pk": 15, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "4988", 
+   "name": "Hanna Williams", 
+   "country": 2, 
+   "expenses": "150", 
+   "birth_date": "1980-01-01", 
+   "department": 1, 
+   "occupation": 3
+  }
+ }, 
+ {
+  "pk": 16, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "3743", 
+   "name": "Michael Thomas", 
+   "country": 2, 
+   "expenses": "150", 
+   "birth_date": "1980-01-01", 
+   "department": 1, 
+   "occupation": 2
+  }
+ }, 
+ {
+  "pk": 17, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "4567", 
+   "name": "Emma Robinsson", 
+   "country": 2, 
+   "expenses": "50", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 2
+  }
+ }, 
+ {
+  "pk": 18, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "3224", 
+   "name": "Isabella Martinez", 
+   "country": 2, 
+   "expenses": "150", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 3
+  }
+ }, 
+ {
+  "pk": 19, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "2493", 
+   "name": "Isabella Smith", 
+   "country": 2, 
+   "expenses": "0", 
+   "birth_date": "1980-01-01", 
+   "department": 2, 
+   "occupation": 1
+  }
+ }, 
+ {
+  "pk": 20, 
+  "model": "people.person", 
+  "fields": {
+   "salary": "2400", 
+   "name": "Olivia Robinsson", 
+   "country": 1, 
+   "expenses": "100", 
+   "birth_date": "1980-01-01", 
+   "department": 1, 
+   "occupation": 2
+  }
+ }
+]
