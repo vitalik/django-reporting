@@ -18,9 +18,10 @@ class LookupFilterSpec(FilterSpec):
                'display': 'All'}
         values = self._values(self.model, self.field)
         for val in values:
-            yield {'selected': self.lookup_val == val,
-                   'query_string': cl.get_query_string({self.field: val}),
-                   'display': val}
+            id, display = val
+            yield {'selected': self.lookup_val == id,
+                   'query_string': cl.get_query_string({self.field: id}),
+                   'display': display}
     
     def _values(self, model, lookup):
         parts = lookup.split('__')
@@ -29,8 +30,13 @@ class LookupFilterSpec(FilterSpec):
             raise Exception('Invalid lookup "%s"' % self.field)
         rel_model = field.rel.to
         if len(parts) == 2:
+            field2 = rel_model._meta.get_field(parts[1])
             ids = [i[0] for i in field.get_choices(include_blank=False)]
-            return set(rel_model.objects.filter(pk__in=ids).values_list(parts[1], flat=True))
+            values = set(rel_model.objects.filter(pk__in=ids).values_list(parts[1], flat=True))
+            if field2.choices:
+                labels = dict(field2.choices)
+                return [(unicode(v), labels[v]) for v in values]
+            return [(v,v) for v in values]
         next_lookup = '__'.join(parts[1:])
         return self._values(rel_model, next_lookup)
 
