@@ -98,7 +98,7 @@ class Report(object):
         for row in rows:
             row_vals = [self.get_value(row, self.selected_group_by)]
             for field, func in self.annotate:
-                row_vals.append(self.get_value(row, field))
+                row_vals.append(row[field])
             details = None
             if self.detail_list_display and self.show_details:
                 details = self.get_details(row)
